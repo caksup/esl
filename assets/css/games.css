@@ -1,0 +1,28 @@
+.game-stage{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;min-height:380px;box-shadow:var(--shadow)}.game-progress{display:flex;align-items:center;gap:12px;margin-bottom:22px}.game-progress .progress{flex:1}.game-qno{font-size:12px;color:var(--muted);font-weight:900}.game-prompt{font-size:clamp(20px,3vw,29px);font-weight:900;line-height:1.25;margin:8px 0 20px}.game-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.game-option{border:2px solid #e7eee9;background:#fbfdfb;border-radius:14px;padding:14px;font-weight:900;text-align:left;min-height:56px;color:var(--ink)}.game-option:hover{border-color:#86bd9c;background:#f1faf3}.game-option.correct{background:#e6f7e9;border-color:#55ae70;color:#1b6a37}.game-option.wrong{background:#fff0f0;border-color:#dd8888;color:#a83232}.game-answer{display:flex;gap:9px;flex-wrap:wrap}.game-answer input{flex:1;min-width:180px;border:2px solid #e2ebe5;border-radius:12px;padding:13px;font-weight:800}.game-feedback{padding:11px 13px;border-radius:12px;font-size:13px;font-weight:900;margin-top:15px}.game-feedback.good{background:#eaf7ed;color:#237344}.game-feedback.bad{background:#fff1ee;color:#a74535}.game-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:22px}.game-tile-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.game-tile{min-height:74px;border-radius:13px;border:2px solid #e2ece5;background:#f6faf7;font-weight:900;font-size:14px;padding:10px}.game-tile.selected{background:#e4f5e9;border-color:var(--green)}.game-tile.matched{opacity:.45;pointer-events:none}.game-letters{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:16px 0}.game-letter{width:41px;height:45px;border-radius:10px;background:#eaf6ed;border:1px solid #cde5d3;display:grid;place-items:center;font-weight:900;font-size:18px}.game-hint{font-size:12px;color:var(--muted);margin-top:8px}.game-result{text-align:center;padding:25px}.game-result .score{font-size:58px;font-weight:900;color:var(--green)}.game-wheel{width:160px;height:160px;border:12px solid #e5f3e9;border-radius:50%;background:conic-gradient(#f9d35e 0 25%,#7bc69b 25% 50%,#7eb4e8 50% 75%,#e99d93 75%);display:grid;place-items:center;margin:10px auto 18px;box-shadow:inset 0 0 0 7px #fff}.game-wheel span{background:white;border-radius:50%;width:54px;height:54px;display:grid;place-items:center;font-weight:900;color:var(--green)}.game-image{max-width:100%;max-height:180px;object-fit:contain;border-radius:14px;background:#f4f7f5;margin:6px 0 14px}.game-sort-list{display:grid;gap:8px}.game-sort-item{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#f8fbf8;border:1px solid var(--line);padding:10px 12px;border-radius:11px}.game-sort-item select{border:1px solid var(--line);padding:7px;border-radius:8px;max-width:150px}.game-mini{font-size:11px;color:var(--muted);font-weight:800}.game-stage .notice{margin-top:14px}
+@media(max-width:580px){.game-stage{padding:15px}.game-options{grid-template-columns:1fr}.game-tile-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.game-tile{min-height:64px}.game-prompt{font-size:22px}.game-actions{flex-wrap:wrap}}
+
+/* JEC ESL Game Hub v2 — dedicated mini-game boards */
+.pair-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+.pair-column{display:grid;gap:8px;min-width:0}
+.pair-column .game-option{min-height:58px}
+.memory-pairs-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.memory-pair-card{min-height:92px;border:2px solid #dce9e0;border-radius:14px;background:linear-gradient(145deg,#eaf6ee,#f8fcf9);color:var(--green);padding:10px;display:grid;place-content:center;gap:5px;text-align:center;font-weight:900}
+.memory-pair-card small{font-size:9px;letter-spacing:.12em;opacity:.7}
+.memory-pair-card b{font-size:14px;overflow-wrap:anywhere}
+.memory-pair-card.revealed{background:#fff8dd;border-color:#e9c75f;color:#51421a}
+.memory-pair-card.matched{background:#e8f7eb;border-color:#68b47b;color:#1d7137;opacity:.82}
+.wordsearch-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(130px,.35fr);gap:18px;align-items:start}
+.wordsearch-grid{display:grid;grid-template-columns:repeat(var(--word-cols,10),minmax(0,1fr));gap:4px;padding:12px;background:#eaf4ed;border-radius:14px;max-width:590px}
+.word-cell{aspect-ratio:1;border:1px solid #d5e4d9;border-radius:7px;background:#fff;color:#183f30;font-weight:900;font-size:clamp(11px,1.7vw,16px);padding:0;min-width:0}
+.word-cell.selected{background:#ffe9a8;border-color:#d9a92f;color:#6b4c00}
+.word-cell:disabled{opacity:1}
+.wordsearch-words{display:grid;gap:7px;font-size:12px}
+.word-target{padding:7px 9px;background:#f3f7f4;border:1px solid var(--line);border-radius:8px;font-weight:900}
+.word-target.found{background:#e6f7e9;color:#237344;text-decoration:line-through}
+.game-letter.used{opacity:.35;background:#dfe6e1;pointer-events:none}
+.arcade-board{border-radius:18px;padding:16px;background:linear-gradient(145deg,#eff8ff,#f7fff7);border:1px solid #d9e9e1}
+.arcade-lane{font-size:32px;text-align:center;padding:12px;margin-bottom:12px;background:linear-gradient(90deg,#dcefff,#fff);border-radius:12px}
+.arcade-choice{min-height:68px}
+.mole-board{background:linear-gradient(145deg,#f5f0ff,#fbf8ff)}
+.fruit-board{background:linear-gradient(145deg,#fff7e9,#f1fff4)}
+@media(max-width:580px){.memory-pairs-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.memory-pair-card{min-height:76px}.wordsearch-layout{grid-template-columns:1fr}.wordsearch-grid{gap:3px;padding:8px}.word-cell{border-radius:5px}.pair-columns{gap:7px}.pair-column .game-option{padding:10px 8px;font-size:12px}}
