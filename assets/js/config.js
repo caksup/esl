@@ -1,4 +1,4 @@
-const DEPLOYED_API_URL = ''; // Paste the deployed Google Apps Script /exec URL here before publishing to GitHub Pages.
+const DEPLOYED_API_URL = 'https://script.google.com/macros/s/AKfycbzHXoQvpCOmBkQeexD7lLbCmcptpp-SaF8DMP_jgBDwi4Pa0rgeKJ5HUVqdU2xcC1dB/exec'; // Paste the deployed Google Apps Script /exec URL here before publishing to GitHub Pages.
 
 const STORED_API_URL = localStorage.getItem('jec_esl_api_url');
 
